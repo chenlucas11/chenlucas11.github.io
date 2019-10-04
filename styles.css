@@ -92,9 +92,11 @@ ABOUT
     }
     .about-bio {
         margin-top: 20px;
-        line-height: 1.5;
+        line-height: 1.25;
         text-align: center;
         width: 90%;
+        margin-left: 0px;
+        margin-bottom: 20px;
     }
 }
 
