@@ -68,8 +68,6 @@ ABOUT
 }*/
 
 #profile-image {
-    max-width: 50%;
-    max-height: 50%;
     max-width: 450px;
     max-height: 550px;
 }
@@ -95,7 +93,68 @@ ABOUT
     .about-bio {
         margin-top: 20px;
         line-height: 1.5;
-        text-align: left;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+
+/*----------
+PROJECTS
+------------*/
+
+#projects {
+    background-color: #fff;
+}
+
+#projects p {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto 35px;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+#projects .grid li {
+    padding: 20px;
+    height: 350px;
+    border-radius: 3px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+
+#projects .grid a li {
+    padding: 20px;
+    height: 350px;
+    border-radius: 3px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+
+#projects ul.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.medium {
+    flex-basis: 50%;
+    background-color: white;
+    display: inline-block;
+}
+
+.medium:hover {
+    opacity: .5;
+}
+
+@media(max-width: 800px) {
+    #projects .grid li.medium {
+        flex-basis: 100%;
     }
 }
 
