@@ -60,16 +60,10 @@ ABOUT
     align-items: center;
 }
 
-
-/*
-.about-img {
-  border: 4px solid #2196f3;
-  background-color: #2196f3;
-}*/
-
 #profile-image {
     max-width: 450px;
     max-height: 550px;
+    border-radius: 50px;
 }
 
 .about-bio {
@@ -83,6 +77,10 @@ ABOUT
 .bio-format {
     font-size: 20px;
     margin-bottom: 40px;
+}
+
+.bio-format a {
+    color: coral;
 }
 
 @media(max-width:900px) {
@@ -117,27 +115,7 @@ PROJECTS
     line-height: 2;
 }
 
-#projects .grid li {
-    padding: 20px;
-    height: 350px;
-    border-radius: 3px;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
-    background-color: #333;
-}
-
-#projects .grid a li {
-    padding: 20px;
-    height: 350px;
-    border-radius: 3px;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
-    background-color: #333;
-}
-
-#projects ul.grid {
+#projects .grid {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -145,9 +123,18 @@ PROJECTS
 }
 
 .medium {
+    height: 350px;
+    width: 600px;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 80px;
+    border: 2px solid black;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
     flex-basis: 50%;
-    background-color: white;
-    display: inline-block;
+    background-color: black;
+    transition: .5s;
 }
 
 .medium:hover {
@@ -155,7 +142,7 @@ PROJECTS
 }
 
 @media(max-width: 800px) {
-    #projects .grid li.medium {
+    #projects .medium {
         flex-basis: 100%;
     }
 }
