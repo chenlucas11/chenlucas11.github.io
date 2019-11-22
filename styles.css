@@ -103,10 +103,6 @@ ABOUT
 PROJECTS
 ------------*/
 
-#projects {
-    background-color: #fff;
-}
-
 #projects p {
     max-width: 800px;
     text-align: center;
@@ -126,19 +122,51 @@ PROJECTS
     height: 350px;
     width: 600px;
     padding: 0px;
-    margin: 10px;
     border-radius: 80px;
-    border: 2px solid black;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
     flex-basis: 50%;
-    background-color: black;
-    transition: .5s;
 }
 
-.medium:hover {
-    opacity: .5;
+.img__wrap {
+    height: 350px;
+    width: 600px;
+    padding: 0px;
+    margin: 10px;
+    border-radius: 80px;
+    border: 0px solid black;
+    position: relative;
+}
+
+.img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 80px;
+    background: rgba(112, 112, 112, 0.6);
+    color: rgb(32, 161, 0);
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__description {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 24pt;
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+    transform: translateY(0);
 }
 
 @media(max-width: 800px) {
