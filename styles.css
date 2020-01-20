@@ -285,11 +285,12 @@ COURSES
 }
 
 .content-table {
+    max-width: 1000px;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 12pt;
     min-width: 400px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
