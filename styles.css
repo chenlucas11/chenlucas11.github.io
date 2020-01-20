@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 html {
@@ -75,7 +76,7 @@ ABOUT
 }
 
 .bio-format {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 40px;
 }
 
@@ -143,8 +144,8 @@ PROJECTS
     left: 0;
     right: 0;
     border-radius: 80px;
-    background: rgba(112, 112, 112, 0.6);
-    color: rgb(32, 161, 0);
+    background: rgba(112, 112, 112, 0.5);
+    color: rgb(255, 255, 255);
     visibility: hidden;
     opacity: 0;
     display: flex;
@@ -160,9 +161,25 @@ PROJECTS
 
 .img__description {
     font-family: helvetica, arial, sans-serif;
-    font-size: 24pt;
+    font-size: 10pt;
     transition: .2s;
     transform: translateY(1em);
+}
+
+.img__description a.btn {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    text-decoration: none;
+    padding: 20px 46px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.img__description a.btn:hover {
+    background-color: #2196f3;
 }
 
 .img__wrap:hover .img__description {
@@ -172,6 +189,9 @@ PROJECTS
 @media(max-width: 800px) {
     #projects .medium {
         flex-basis: 100%;
+    }
+    .img__description a.btn {
+        padding: 15px 40px;
     }
 }
 
@@ -218,7 +238,7 @@ HEADER
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    opacity: 1;
+    opacity: 0.7;
     border: 2px solid white;
 }
 
@@ -239,6 +259,68 @@ HEADER
     #hero a.btn {
         padding: 15px 40px;
     }
+}
+
+
+/*----------
+COURSES
+------------*/
+
+#courses {
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#courses p {
+    max-width: 800px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 12pt;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
 }
 
 
